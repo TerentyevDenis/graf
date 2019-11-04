@@ -11,7 +11,7 @@ class Graphtable : Fragment() {
 
     override val root = tableview(row) {
         for (i in 1..20) {
-            column(i.toString(), Row::getElem).remainingWidth()
+            column(i.toString(), Row::getElem).remainingWidth().isSortable=false
         }
         columnResizePolicy = SmartResize.POLICY
         hgrow=Priority.ALWAYS

@@ -18,8 +18,8 @@ fun fillDataforTable(): ObservableList<Row>{
         }
         for (j in 0..19){
             val (path, value) = shortestPath(graph,(i+1).toString(),(j+1).toString() )
-            print("$i, $j")
-            println("path = $path, value = $value")
+//            print("$i, $j")
+//            println("path = $path, value = $value")
             if (value!= Double.POSITIVE_INFINITY) {
                 result.get(i).cols.add(j, "path = $path, value = $value")
             }else
