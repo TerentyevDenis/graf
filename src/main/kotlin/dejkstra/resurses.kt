@@ -21,9 +21,9 @@ fun fillDataforTable(): ObservableList<Row>{
 //            print("$i, $j")
 //            println("path = $path, value = $value")
             if (value!= Double.POSITIVE_INFINITY) {
-                result.get(i).cols.add(j, "path = $path, value = $value")
+                result.get(i).cols.add(j, "$value, path = $path")
             }else
-                result.get(i).cols.add(j, "value = 0")
+                result.get(i).cols.add(j, "0")
         }
     }
     return result.observable()
